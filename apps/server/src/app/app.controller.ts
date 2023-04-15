@@ -17,4 +17,9 @@ export class AppController {
     console.log('creating user', user);
     return this.appService.createUser(user);
   }
+
+  @Get('analytics')
+  getAnalytics() {
+    return this.appService.getAnalyticsData();
+  }
 }
